@@ -30,7 +30,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 1; //percobaan 1
+  int _counter = 1; //percobaan
   String _text = "Ganjil"; //percobaan 2
   String _kelipatan = "";
   String _prima = "";
@@ -48,19 +48,10 @@ class _MyHomePageState extends State<MyHomePage> {
         _text = "Ganjil";
       }
 
-      _text = "Ganjil: ";
-      for(int i=0; i<= _counter; i++){
+      _text = "Ganjil: "; //percobaan 3
+      for(int i=1; i<= _counter; i++){
         if(i%2 !=0){
           _text += '${i}, ';
-        }
-      }
-
-      _text = "Genap";
-      if(_counter%2 != 0){
-        _text = "Ganjil : 1";
-
-        for(int i=1; i<=_counter; i++){
-          _text += ', $i';
         }
       }
 
@@ -99,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Hello World',
+              '',
             ),
             Text(
               '$_counter',
@@ -117,6 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
               _prima,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+
           ],
         ),
       ),
